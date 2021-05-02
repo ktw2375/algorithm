@@ -6,7 +6,7 @@ access = "VW1rO84DHCPUxcBCsWXxmazpQzuk4UBxmb2px4kH"
 secret = "AGItCU2DgpiYb56cqEgFa6WlzZliAtr0WY5eExv1"
 
 def get_target_price(ticker, k):
-    """변동성 돌파 전략으로 매수 목표가 조회"""
+    """변동성 돌파 전략으로 매수 목표가 조회 ."""
     df = pyupbit.get_ohlcv(ticker, interval="day", count=2)
     target_price = df.iloc[0]['close'] + (df.iloc[0]['high'] - df.iloc[0]['low']) * k
     return target_price
