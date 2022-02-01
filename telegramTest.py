@@ -34,7 +34,7 @@ while True:
         rsi = round(pd.Series(100 - (100 / (1 + RS)), name="RSI").iloc[-1])
 
         chat_id = '985647682'
-        bot = telegram.Bot(token='1600653008:AAHo9es0G96B2Ypr50VWr4V0ffpDgHcRd5s')
+        bot = telegram.Telegram.Bot(token='1600653008:AAHo9es0G96B2Ypr50VWr4V0ffpDgHcRd5s')
 
         stockK = stockrsi(ticker, 14, 3, 3)
 
